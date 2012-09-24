@@ -1,0 +1,165 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Base_model	.\base_model.php	/^class Base_model{$/;"	c
+Follow	.\follow.php	/^class Follow extends Base_model{$/;"	c
+Product	.\product.php	/^class Product extends Base_model{$/;"	c
+Retweet	.\retweet.php	/^class Retweet extends Base_model{$/;"	c
+Scheme	.\scheme.php	/^class Scheme extends Base_model{$/;"	c
+Transaction	.\transaction.php	/^class Transaction extends Base_model{$/;"	c
+User	.\user.php	/^class User extends Base_model{$/;"	c
+_CI	.\base_model.php	/^                $this->_CI =& get_instance();$/;"	v
+_CI	.\base_model.php	/^        private $_CI;$/;"	v
+_CI	.\follow.php	/^                $this->_CI =& get_instance();$/;"	v
+_CI	.\follow.php	/^        private $_CI;$/;"	v
+_CI	.\product.php	/^                $this->_CI =& get_instance();$/;"	v
+_CI	.\product.php	/^        private $_CI;$/;"	v
+_CI	.\retweet.php	/^                $this->_CI =& get_instance();$/;"	v
+_CI	.\retweet.php	/^        private $_CI;$/;"	v
+_CI	.\scheme.php	/^                $this->_CI =& get_instance();$/;"	v
+_CI	.\scheme.php	/^        private $_CI;$/;"	v
+_CI	.\transaction.php	/^                $this->_CI =& get_instance();$/;"	v
+_CI	.\transaction.php	/^        private $_CI;$/;"	v
+_CI	.\user.php	/^                $this->_CI = get_instance();$/;"	v
+_CI	.\user.php	/^        private $_CI;$/;"	v
+__construct	.\base_model.php	/^        public function __construct( $table_name ){$/;"	f
+__construct	.\follow.php	/^        public function __construct(){$/;"	f
+__construct	.\product.php	/^        public function __construct(){$/;"	f
+__construct	.\retweet.php	/^        public function __construct(){$/;"	f
+__construct	.\scheme.php	/^        public function __construct(){$/;"	f
+__construct	.\transaction.php	/^        public function __construct(){$/;"	f
+__construct	.\user.php	/^        public function __construct(){$/;"	f
+_scheme_id	.\scheme.php	/^                $this->_scheme_id = $_scheme_id;$/;"	v
+_scheme_id	.\scheme.php	/^        private $_scheme_id;$/;"	v
+_table_name	.\base_model.php	/^                $this->_table_name = $table_name;$/;"	v
+_table_name	.\base_model.php	/^        private $_table_name;$/;"	v
+_user_id	.\user.php	/^                $this->_user_id = $user_id;$/;"	v
+_user_id	.\user.php	/^        private $_user_id;$/;"	v
+add_new	.\base_model.php	/^        public function add_new( $info ){$/;"	f
+add_news	.\product.php	/^        public function add_news( $products , $scheme_id ){$/;"	f
+add_products	.\scheme.php	/^        public function add_products( $product_infos ){$/;"	f
+affected_rows	.\base_model.php	/^                $affected_rows = $this->_CI->db->affected_rows();$/;"	v
+array_to_csv	.\scheme.php	/^        private function array_to_csv( $array , $key ){$/;"	f
+cache	.\base_model.php	/^                        if( $cache == TRUE ){$/;"	v
+cache	.\base_model.php	/^                if( $cache == TRUE ){$/;"	v
+cond	.\base_model.php	/^        protected function get_query_hash( $cond = array() , $select = '' ){$/;"	v
+cond	.\base_model.php	/^        public function count_all( $cond = array() ){$/;"	v
+cond	.\base_model.php	/^        public function find( $cond = array() , $select = '' , $return_dyadic_array = FALSE , $cache = FALSE ){$/;"	v
+cond	.\retweet.php	/^        public function find( $cond = array() , $select = '' , $return_dyadic_array = FALSE ){$/;"	v
+cond	.\scheme.php	/^        public function find( $cond = array() , $select = '' ){$/;"	v
+count	.\base_model.php	/^                        $count = $this->_CI->db->count_all_results( $this->_table_name );$/;"	v
+count	.\base_model.php	/^                        $count = 0;$/;"	v
+count_all	.\base_model.php	/^        public function count_all( $cond = array() ){$/;"	f
+count_all_by_scheme_id	.\transaction.php	/^        public function count_all_by_scheme_id( $scheme_id ){$/;"	f
+count_paid_by_scheme_id	.\transaction.php	/^        public function count_paid_by_scheme_id( $scheme_id ){$/;"	f
+decrement	.\base_model.php	/^        public function decrement( $cond , $key , $value = 1 ){$/;"	f
+del	.\base_model.php	/^        public function del( $cond ){$/;"	f
+do_query	.\base_model.php	/^        private function do_query( $cond ){$/;"	f
+during_post	.\base_model.php	/^                $during_post = $now_time - $post_time;$/;"	v
+expire_time	.\scheme.php	/^                $expire_time = $this->_CI->config->item( 'expire_time' );$/;"	v
+favorites	.\user.php	/^                                $favorites = $this->_CI->Follow_m->get_favorites_by_user_id( $user_id );$/;"	v
+find	.\base_model.php	/^        public function find( $cond = array() , $select = '' , $return_dyadic_array = FALSE , $cache = FALSE ){$/;"	f
+find	.\retweet.php	/^        public function find( $cond = array() , $select = '' , $return_dyadic_array = FALSE ){$/;"	f
+find	.\scheme.php	/^        public function find( $cond = array() , $select = '' ){$/;"	f
+following_ids	.\scheme.php	/^                $following_ids = $this->_CI->follow_m->find( array( 'follower_id'=>$user_id ) , 'user_id' , TRUE );$/;"	v
+following_ids_csv	.\scheme.php	/^                $following_ids_csv = $this->array_to_csv( $following_ids , 'user_id' );$/;"	v
+following_original_scheme_ids	.\scheme.php	/^                        $following_original_scheme_ids = parent::find( 'holder_id IN ( ' . $following_ids_csv . ')' , 'scheme_id,holder_id,time' , TRUE );$/;"	v
+following_original_scheme_ids	.\scheme.php	/^                $following_original_scheme_ids = array();$/;"	v
+following_retweet_scheme_ids	.\scheme.php	/^                        $following_retweet_scheme_ids = array_merge( $following_retweet_scheme_ids , $this->scheme_ids_from_retweet( $following_id['user_id'] ) );$/;"	v
+following_retweet_scheme_ids	.\scheme.php	/^                $following_retweet_scheme_ids = array();$/;"	v
+following_scheme_ids	.\scheme.php	/^                $following_scheme_ids = $this->scheme_ids_from_following( $subject_user_id );$/;"	v
+format_status	.\scheme.php	/^        public function format_status( $scheme = array() ){$/;"	f
+format_time	.\base_model.php	/^        protected function format_time( $raw_post_time ){$/;"	f
+formated_status	.\scheme.php	/^                                        $formated_status = '已过期';$/;"	v
+formated_status	.\scheme.php	/^                                        $formated_status = '进行中';$/;"	v
+formated_time	.\base_model.php	/^                        $formated_time =  ceil( ( $during_post \/ 3600 ) ) . "小时前";$/;"	v
+formated_time	.\base_model.php	/^                        $formated_time = "刚刚";$/;"	v
+formated_time	.\base_model.php	/^                        $formated_time = "前天";$/;"	v
+formated_time	.\base_model.php	/^                        $formated_time = "昨天";$/;"	v
+formated_time	.\base_model.php	/^                        $formated_time = date( 'n.d' , $post_time );$/;"	v
+formated_time	.\base_model.php	/^                $formated_time = ceil( ( $during_post \/ 60 ) ) . "分钟前";$/;"	v
+get_expire_time	.\scheme.php	/^        public function get_expire_time( $scheme_id ){$/;"	f
+get_favorites_by_user_id	.\follow.php	/^        public function get_favorites_by_user_id( $user_id , $interval = '' ){$/;"	f
+get_interval_cond	.\follow.php	/^        private function get_interval_cond(){}$/;"	f
+get_query_hash	.\base_model.php	/^        protected function get_query_hash( $cond = array() , $select = '' ){$/;"	f
+get_retwetts_by_user_id	.\follow.php	/^        public function get_retwetts_by_user_id( $user_id , $interval = '' ){$/;"	f
+get_schemes_for_home	.\scheme.php	/^        public function get_schemes_for_home( $subject_user_id = 0 , $page = 1 ){$/;"	f
+get_user_id_by_nick	.\user.php	/^        public function get_user_id_by_nick( $user_nick = '' ){$/;"	f
+get_user_info	.\user.php	/^        public function get_user_info( $user_id ){$/;"	f
+get_user_social_info	.\user.php	/^        public function get_user_social_info( $user_id = NULL ){$/;"	f
+has_follow	.\follow.php	/^        public function has_follow( $user_id ){$/;"	f
+has_unset	.\retweet.php	/^                                                        $has_unset = TRUE;$/;"	v
+has_unset	.\retweet.php	/^                                $has_unset = FALSE;$/;"	v
+has_unset	.\retweet.php	/^                                if( $has_unset === TRUE ){$/;"	v
+hash	.\base_model.php	/^                        $hash = hash( 'md4' , $cond . $select . $this->_table_name );$/;"	v
+hash	.\base_model.php	/^                        $hash = hash( 'md4' , implode( '' , $cond ) . $select . $this->_table_name );$/;"	v
+holder	.\scheme.php	/^                                $holder = $this->_CI->User_m->find( array( 'user_id'=>$scheme['holder_id'] ) );$/;"	v
+home_scheme_ids	.\scheme.php	/^                $home_scheme_ids = array_merge( $following_scheme_ids , $original_scheme_ids , $retweet_scheme_ids );$/;"	v
+home_scheme_ids_in_this_page	.\scheme.php	/^                $home_scheme_ids_in_this_page = array_slice( $home_scheme_ids , ( ( $page - 1 ) * self::PAGE_LIMIT ) , self::PAGE_LIMIT );$/;"	v
+home_schemes	.\scheme.php	/^                $home_schemes = array();$/;"	v
+i	.\retweet.php	/^                foreach( $retweets as $i=>$retweet ){$/;"	v
+i	.\scheme.php	/^                foreach( $following_ids as $i=>$following_id ){$/;"	v
+i	.\scheme.php	/^                foreach( $home_scheme_ids_in_this_page as $i=>$home_scheme_id ){$/;"	v
+increment	.\base_model.php	/^        public function increment( $cond , $key , $value = 1 ){$/;"	f
+index	.\product.php	/^                foreach( $products as $index=>$product ){$/;"	v
+interval	.\follow.php	/^        public function get_favorites_by_user_id( $user_id , $interval = '' ){$/;"	v
+interval	.\follow.php	/^        public function get_retwetts_by_user_id( $user_id , $interval = '' ){$/;"	v
+is_exists	.\base_model.php	/^        public function is_exists( $cond ){$/;"	f
+k	.\base_model.php	/^                foreach( $cond as $k=>$v ){$/;"	v
+key	.\base_model.php	/^                foreach( $cond as $key=>$value ){$/;"	v
+last_query	.\base_model.php	/^                        throw new Exception( "SQL error with SQL [" . $last_query = $this->_CI->db->last_query() . ']' );$/;"	v
+now_time	.\base_model.php	/^                $now_time = $_SERVER['REQUEST_TIME'];$/;"	v
+num_rows	.\base_model.php	/^                $num_rows = $query_result->num_rows();$/;"	v
+num_rows	.\base_model.php	/^                if( $num_rows == 1 && !$return_dyadic_array ){$/;"	v
+num_rows	.\scheme.php	/^                                $num_rows = 0;$/;"	v
+num_rows	.\scheme.php	/^                                $num_rows = 1;$/;"	v
+num_rows	.\scheme.php	/^                        if( $num_rows == 1 ){$/;"	v
+original_scheme_ids	.\scheme.php	/^                $original_scheme_ids = $this->scheme_ids_from_original( $subject_user_id );$/;"	v
+post_time	.\base_model.php	/^                $post_time = strtotime( $raw_post_time );$/;"	v
+prev_retweet	.\retweet.php	/^                                $prev_retweet = parent::find( array( 'retweet_id'=>$prev_retweet_id ) );$/;"	v
+prev_retweet_id	.\retweet.php	/^                        $prev_retweet_id = $retweet['prev_retweet_id'];$/;"	v
+prev_retweet_user	.\retweet.php	/^                                $prev_retweet_user = $scheme['holder'];$/;"	v
+prev_retweet_user	.\retweet.php	/^                                $prev_retweet_user = $this->_CI->user_m->find( array( 'user_id'=>$prev_retweet['retweeter_id'] ) );$/;"	v
+query_hash	.\base_model.php	/^                        $query_hash = $this->get_query_hash( $cond , $select );$/;"	v
+query_result	.\base_model.php	/^                $query_result = $this->_CI->db->get( $this->_table_name );$/;"	v
+query_result	.\base_model.php	/^                $query_result = $this->do_query( $cond );$/;"	v
+raw_schemes	.\scheme.php	/^                        $raw_schemes = parent::find( $cond , $select );$/;"	v
+res	.\base_model.php	/^                $res = $this->do_query( $cond );$/;"	v
+res	.\follow.php	/^                $res = $this->find( array( 'follower_id'=>$user_id ) , 'id' );$/;"	v
+res	.\follow.php	/^                $res = $this->find( array( 'user_id'=>$user_id ) , 'id' );$/;"	v
+return_dyadic_array	.\retweet.php	/^                if( $return_dyadic_array == FALSE && sizeof( $retweets ) == 1 ){$/;"	v
+retweet_infos	.\scheme.php	/^                $retweet_infos = $this->_CI->retweet_m->find( array( 'retweeter_id'=>$user_id ) , null , TRUE );$/;"	v
+retweet_scheme_ids	.\scheme.php	/^                $retweet_scheme_ids = $this->scheme_ids_from_retweet( $subject_user_id );$/;"	v
+retweets	.\retweet.php	/^                $retweets = parent::find( $cond , $select , TRUE );$/;"	v
+retwetts	.\user.php	/^                                $retwetts = $this->_CI->Follow_m->get_retwetts_by_user_id( $user_id );$/;"	v
+row	.\base_model.php	/^                        $row = $this->_CI->memcache->get( $query_hash );$/;"	v
+row	.\base_model.php	/^                $row = $query_result->result_array();$/;"	v
+row	.\base_model.php	/^                $row = $res->result_array();$/;"	v
+scheme	.\retweet.php	/^                                $scheme = $this->_CI->scheme_m->find( array( 'scheme_id'=>$retweet['scheme_id'] ) );$/;"	v
+scheme	.\scheme.php	/^                $scheme = parent::find( array( 'scheme_id'=>$scheme_id ) );$/;"	v
+scheme	.\scheme.php	/^        public function format_status( $scheme = array() ){$/;"	v
+scheme_count	.\user.php	/^                $scheme_count = $this->_CI->scheme_m->count_all( array( 'holder_id'=>$user_id ) );$/;"	v
+scheme_ids_from_following	.\scheme.php	/^        private function scheme_ids_from_following( $user_id ){$/;"	f
+scheme_ids_from_original	.\scheme.php	/^        private function scheme_ids_from_original( $user_id ){$/;"	f
+scheme_ids_from_retweet	.\scheme.php	/^        private function scheme_ids_from_retweet( $user_id ){$/;"	f
+scheme_no	.\scheme.php	/^                        foreach( $schemes as $scheme_no=>$scheme ){$/;"	v
+schemes	.\scheme.php	/^                                $schemes = $raw_schemes;$/;"	v
+set_id	.\scheme.php	/^        public function set_id( $_scheme_id ){$/;"	f
+set_user_id	.\user.php	/^        public function set_user_id( $user_id ){$/;"	f
+sql	.\base_model.php	/^                $sql = "UPDATE `$this->_table_name` SET `$key` = `$key`+$value WHERE $where";$/;"	v
+subject_user_id	.\scheme.php	/^        public function get_schemes_for_home( $subject_user_id = 0 , $page = 1 ){$/;"	v
+time	.\scheme.php	/^                $time = strtotime( $scheme['time'] );$/;"	v
+update	.\base_model.php	/^        public function update( $value , $cond ){$/;"	f
+user_id	.\user.php	/^                        $user_id = $user_info['user_id'];$/;"	v
+user_id	.\user.php	/^                $user_id = NULL;$/;"	v
+user_id	.\user.php	/^        public function get_user_social_info( $user_id = NULL ){$/;"	v
+user_info	.\user.php	/^                        $user_info = parent::find( array( 'nick'=>$user_nick ) );$/;"	v
+user_info	.\user.php	/^                $user_info = parent::find( array( 'user_id'=>$user_id ) );$/;"	v
+user_nick	.\user.php	/^        public function get_user_id_by_nick( $user_nick = '' ){$/;"	v
+user_social_info	.\user.php	/^                $user_social_info = array();$/;"	v
+value	.\base_model.php	/^        public function decrement( $cond , $key , $value = 1 ){$/;"	v
+value	.\base_model.php	/^        public function increment( $cond , $key , $value = 1 ){$/;"	v
+where	.\base_model.php	/^                $where ='';$/;"	v

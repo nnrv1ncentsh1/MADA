@@ -1,0 +1,32 @@
+@header_height: 40px;
+//页首占位符
+#under_header{
+        height: @header_height
+}
+//页首元素
+#header{
+        height: @header_height;
+        //覆盖 bootstrap 的 navbar-inner
+        .navbar-inner{
+                background: #000;
+                //必须的 否则会被 bootstrap 的样式覆盖
+                .container{
+                        width: 930px;
+                }
+        }
+        .nav{
+                a{
+                        font-size: 14px;
+                        text-shadow: none;
+                        color: #999;
+                        &:hover{
+                                color: #fff;
+                        }
+                }
+        }
+        .logo{
+                height: 40px;
+                width: 150px;
+                float: left;
+        }
+}

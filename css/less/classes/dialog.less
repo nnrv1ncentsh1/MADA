@@ -1,0 +1,134 @@
+@import "basic.less";
+@textarea_width: 460px;
+@dialog_width: 504px;
+//弹出框容器通用样式
+//弹出框的容器
+.dialog_container{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+        display: inline-block;
+        //此处数字不能太大 否则会和 tooltip 冲突
+        z-index: 128;
+        top: 150px;
+        left: 50%;
+        margin-left: -( @dialog_width / 2 );
+        box-shadow: 0 4px 12px rgba(0, 0, 0, .4),inset 0 1px 0 rgba(255, 255, 255, .5);
+        border-radius: 8px;
+}
+//弹出框主体
+.dialog_content{
+        width: 488px;
+        background: #000;
+        top: 108px;
+        border-radius: 8px;
+        //半透明边框
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding;
+        -o-background-clip: padding;
+        border: 8px solid rgba(0,0,0,0.82);
+        background-clip: padding-box;
+        border-top: 0px solid #fff;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        //兼容ie的不透明边框
+        *border: 8px solid #000;
+        *border-top: 0px solid #fff;
+}
+//dialog头部信息条
+.dialog_header{
+        top: 70px;
+        height: 38px;
+        width: @dialog_width;
+        //半透明的头部信息条
+        background: rgba(0,0,0,0.82);
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        //兼容ie的纯色头部
+        *padding: 0;
+        *margin: 0;
+        *background: #000;
+}
+//header中的标题文字样式
+.dialog_header_title{
+        padding: 10px 0;
+        padding-left: 8px;
+        color: #ccc;
+        float: left;
+        font-size: 14px;
+        display: block;
+        *padding-top: 10px;
+}
+//头部关闭按钮
+.dialog_header_close_button{
+        .pointer;
+        margin-right: 4px;
+        margin-top: 8px;
+        float: right;
+        font: bold 16px Tahoma,sans-serif;
+        line-height: 18px;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+}
+//dialog主体元素(区别于content,其包含在content之中) 在 header/footer 之间
+.dialog_main{
+        padding: 5px 12px 10px 12px;
+        margin: 0;
+        border: 1px solid #fff;
+        border-radius: 2px;
+        //为了使主要文字不随弹出框一起透明
+        background: #fff;
+        *height: 165px;
+}
+//main 中的条目
+.dialog_item{
+        margin: 3px 0;
+        clear: both;
+
+}
+//main中textarea的容器
+.dialog_item_textarea_container{
+        border:1px solid #ddd;
+        border-radius:5px;
+        width:@textarea_width;
+        padding-bottom:18px;
+        .help-block{
+                font-family: Constantia,Georgia;
+                font-size:14px;
+                padding:0 5px;
+        }
+        textarea{
+                .dialog_item_textarea;
+        }
+}
+//main中的textarea
+.dialog_item_textarea{
+        margin:0;
+        padding:0;
+        border:0;
+        width:@textarea_width;
+        &:focus{
+                box-shadow:none;
+        }
+}
+//功能栏 放置上传图片的按钮等
+.tools_bar{
+        i{
+                .pointer;
+                color: #32ccfe;
+                font-size: 18px;
+        }
+        .disable{
+                color: #cecece;
+        }
+}
+//dialog页脚元素
+.dialog_footer{
+        min-height: 60px;
+        button{
+                margin-left: 5px;
+        }
+}

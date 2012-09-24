@@ -1,0 +1,108 @@
+@import "classes/dialog.less";
+#add_new_scheme_dialog{
+        display:none;
+}
+.step{
+        display:none;
+}
+#scheme_info_summary{
+        .title{
+                color:#05c;
+                .pointer;
+        }
+        .describe{
+                color:#555;
+                .pointer;
+        }
+        margin-bottom:10px;
+}
+#product_items{
+        //用来放置商品信息控件中的输入框
+        .product_title{
+                width:362px;
+        }
+        .product_original_price{
+                width:46px;
+        }
+        .product_describe{
+                width:@textarea_width;
+        }
+}
+//上传文件进度条
+#upload_img_progress{
+        display:none;
+}
+//方案描述中的图片
+.img_item{
+        width:48px;
+        height:48px;
+        float:left;
+        margin-right:5px;
+        padding-left:5px;
+        display:none;
+        i{
+                padding:0 2px;
+                opacity:0.8;
+                font-size:20px;
+                background:#666;
+                color:#fff;
+                display:inline-block;
+                margin-left:-48px;
+                cursor:pointer;
+        }
+}
+//点击添加一个商品item
+#add_new_product_link{
+        color:#3378b4;
+        font-size:14px;
+        cursor:pointer;
+}
+//方案相关商品信息
+#product_items{}
+//单条商品信息
+.product_item{}
+.product_title{
+        width:362px;
+}
+.product_original_price{
+        width:50px;
+}
+.product_describe{
+        width:@textarea_width;
+}
+//点击则显示商品详细信息输入框
+.add_product_describe_link{
+        display:inline-block;
+        margin:5px 0;
+        color:#999;
+        cursor:pointer;
+}
+//商品详细信息输入框 默认不显示
+.product_textarea_container{
+        display:none;
+}
+//输入框中最下面的当前方案的信息
+#scheme_info{
+        height:30px;
+        span{
+                line-height:30px;
+                font-size:14px;
+                font-weight:bold;
+        }
+        button{
+                margin-left:0 5px;
+        }
+        //信息框中的子栏目 ( 单价 折扣 .etc ) 
+        .scheme_info_item{
+                margin-right:20px;
+                display:inline-block;
+                float:left;
+        }
+}
+//默认不显示( 用户提交按钮 当前方案等信息 )
+#add_new_scheme_submit{
+        display:none;
+}
+#product_container{
+        display:none;
+}

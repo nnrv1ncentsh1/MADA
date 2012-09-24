@@ -1,0 +1,8 @@
+<source lang="robots">
+User-agent: *
+Disallow: /admin/
+Disallow: /picture/
+Disallow: /js/
+</source>
+
+

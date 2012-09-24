@@ -1,0 +1,77 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Follow_api	.\follow_api.php	/^class Follow_api extends REST_Controller{$/;"	c
+Retweet_api	.\retweet_api.php	/^class Retweet_api extends REST_Controller{$/;"	c
+Scheme_api	.\scheme_api.php	/^class Scheme_api extends REST_Controller{$/;"	c
+Schemes_api	.\schemes_api.php	/^class Schemes_api extends REST_Controller{$/;"	c
+User_api	.\user_api.php	/^class User_api extends REST_Controller{$/;"	c
+app_api	.\app_api.php	/^class app_api extends REST_Controller{$/;"	c
+config_get	.\app_api.php	/^        public function config_get(){$/;"	f
+content	.\retweet_api.php	/^                $content = $this->post( 'content' , TRUE );$/;"	v
+count	.\follow_api.php	/^                $count = $this->follow_m->$function_name( $user_id );$/;"	v
+count_get	.\follow_api.php	/^        public function count_get(){$/;"	f
+describe	.\scheme_api.php	/^                $describe = $this->post( 'describe' , TRUE );$/;"	v
+discount	.\scheme_api.php	/^                $discount = $this->post( 'discount' , TRUE );$/;"	v
+expire_time	.\scheme_api.php	/^                        $expire_time = $this->scheme_m->get_expire_time( $scheme_id );$/;"	v
+favorites	.\scheme_api.php	/^                        $favorites = $this->follow_m->get_retwetts_by_user_id( $holder_id );$/;"	v
+format_time	.\scheme_api.php	/^        private function format_time( $time ){$/;"	f
+from_info	.\retweet_api.php	/^                $from_info = $this->post( 'from_info' , TRUE );$/;"	v
+function_name	.\follow_api.php	/^                $function_name = join( '' , array( 'get_' , $key , '_by_user_id' ) );$/;"	v
+holder	.\scheme_api.php	/^                        $holder = $this->user_m->find( array( 'user_id'=>$holder_id ) );$/;"	v
+holder	.\scheme_api.php	/^                        $holder = $this->user_m->find( array( 'user_id'=>$scheme['holder_id'] ) );$/;"	v
+holder_id	.\scheme_api.php	/^                        $holder_id = $scheme['holder_id'];$/;"	v
+holder_id	.\scheme_api.php	/^                        $holder_id = $this->session->userdata( 'user_id' );$/;"	v
+holder_info	.\scheme_api.php	/^                        $holder_info = $this->user_m->find( array( 'user_id'=>$holder_id ) );$/;"	v
+home_get	.\schemes_api.php	/^        function home_get(){$/;"	f
+img_name	.\retweet_api.php	/^                $img_name = $this->post( 'img_name' , TRUE );$/;"	v
+img_name	.\scheme_api.php	/^                $img_name = $this->post( 'imgName' , TRUE );$/;"	v
+index	.\scheme_api.php	/^                        foreach( $products as $index=>$product ){$/;"	v
+info_get	.\retweet_api.php	/^        public function info_get(){$/;"	f
+info_get	.\scheme_api.php	/^        public function info_get(){$/;"	f
+info_get	.\user_api.php	/^        public function info_get(){$/;"	f
+info_post	.\retweet_api.php	/^        public function info_post(){$/;"	f
+info_post	.\scheme_api.php	/^        public function info_post(){$/;"	f
+info_put	.\scheme_api.php	/^        public function info_put(){$/;"	f
+is_legal_scheme_id	.\retweet_api.php	/^        public function is_legal_scheme_id(){$/;"	f
+is_legal_scheme_id	.\scheme_api.php	/^        private function is_legal_scheme_id( $id ){$/;"	f
+is_self_scheme	.\scheme_api.php	/^                        $is_self_scheme = FALSE;$/;"	v
+key	.\follow_api.php	/^                $key = $this->get( 'key' , TRUE );$/;"	v
+new_retweet	.\retweet_api.php	/^                        $new_retweet = array($/;"	v
+object_user_id	.\app_api.php	/^                                $object_user_id = $this->session->userdata( 'user_id' );$/;"	v
+object_user_id	.\scheme_api.php	/^                        $object_user_id = $this->session->userdata( 'user_id' );$/;"	v
+object_user_info	.\app_api.php	/^                                $object_user_info = $this->user_m->find( array( 'user_id'=>$object_user_id ) );$/;"	v
+object_user_info	.\app_api.php	/^                                $object_user_info = null;$/;"	v
+page	.\schemes_api.php	/^                        $page = !empty( $page ) ? $page : 1;$/;"	v
+page	.\schemes_api.php	/^                        $page = $this->get( 'page' );$/;"	v
+products	.\scheme_api.php	/^                        $products = $this->product_m->find( array( 'scheme_id'=>$scheme_id ) );$/;"	v
+products	.\scheme_api.php	/^                $products = $this->post( 'products' , TRUE );$/;"	v
+retweet_id	.\retweet_api.php	/^                $retweet_id = $this->get( 'retweet_id' , TRUE );$/;"	v
+retweeter_id	.\retweet_api.php	/^                                $retweeter_id = $this->session->userdata( 'user_id' );$/;"	v
+retweeter_info	.\retweet_api.php	/^                                $retweeter_info = $this->user_m->find( array( 'user_id'=>$retweeter_id ) );$/;"	v
+retwetts	.\scheme_api.php	/^                        $retwetts = $this->follow_m->get_favorites_by_user_id( $holder_id );$/;"	v
+scheme	.\scheme_api.php	/^                        $scheme = $this->scheme_m->find( array( "scheme_id"=>$scheme_id ) );$/;"	v
+scheme	.\scheme_api.php	/^                        $scheme = $this->scheme_m->find( array( 'scheme_id'=>$scheme_id ) );$/;"	v
+scheme	.\scheme_api.php	/^                        $scheme = $this->scheme_m->format_status( $scheme );$/;"	v
+scheme	.\scheme_api.php	/^                $scheme = $this->Scheme_m->find( array( 'scheme_id'=>$scheme_id ) );$/;"	v
+scheme_id	.\scheme_api.php	/^                        $scheme_id = $this->db->insert_id();$/;"	v
+scheme_id	.\scheme_api.php	/^                $scheme_id = $this->get( 'scheme_id' , TRUE );$/;"	v
+scheme_info	.\scheme_api.php	/^                $scheme_info = $this->scheme_m->find( array( 'scheme_id'=>$scheme_id ) );$/;"	v
+schemes	.\schemes_api.php	/^                        $schemes = $this->Scheme_m->get_schemes_for_home( $subject_user_id , $page );$/;"	v
+slider_detail_get	.\scheme_api.php	/^        public function slider_detail_get(){$/;"	f
+slider_more_get	.\scheme_api.php	/^        public function slider_more_get(){$/;"	f
+slider_retweet_get	.\scheme_api.php	/^        public function slider_retweet_get(){$/;"	f
+slider_time_get	.\scheme_api.php	/^        public function slider_time_get(){$/;"	f
+slider_tran_get	.\scheme_api.php	/^        public function slider_tran_get(){$/;"	f
+subject_user_id	.\schemes_api.php	/^                        $subject_user_id = $this->get( 'subject_user_id' );$/;"	v
+sum_now_price	.\scheme_api.php	/^                $sum_now_price = $this->post( 'sumNowPrice' , TRUE );$/;"	v
+sum_ori_price	.\scheme_api.php	/^                $sum_ori_price = $this->post( 'sumOriPrice' , TRUE );$/;"	v
+title	.\scheme_api.php	/^                $title = $this->post( 'title' , TRUE );$/;"	v
+trans_all_num	.\scheme_api.php	/^                        $trans_all_num = $this->transaction_m->count_all_by_scheme_id( $scheme_id );$/;"	v
+trans_paid_num	.\scheme_api.php	/^                        $trans_paid_num = $this->transaction_m->count_paid_by_scheme_id( $scheme_id );$/;"	v
+user	.\user_api.php	/^                $user = $this->User_m->find( array( 'user_id'=>$user_id ) );$/;"	v
+user_id	.\follow_api.php	/^                $user_id = $this->get( 'user_id' , TRUE );$/;"	v
+user_id	.\user_api.php	/^                $user_id = $this->get( 'id' , TRUE );$/;"	v

@@ -1,0 +1,161 @@
+//方案时间流中元素下拉菜单样式
+@sns_info_box_width:80px;
+.time_info{
+        clear:both;
+}
+.slider{
+        font-size:12px;
+        //显示 slider 的类型
+        padding-left:10px;
+        border-left:#ddd solid 3px;
+}
+.type{
+        display:none;
+}
+.holder_nick{
+        color:#999;
+}
+.sns_info{
+        border-bottom:1px solid #ddd;
+        display:inline-block;
+        padding:5px 0;
+        clear:both;
+}
+.retweets_count{
+        span{
+                font-weight:bolder;
+        }
+        float:left;
+        width:@sns_info_box_width;
+        border-right:1px solid #ddd;
+}
+.favorites_count{
+        span{
+                font-weight:bolder;
+        }
+        float:left;
+        width:@sns_info_box_width;
+        margin-left:10px;
+}
+.post_time{
+        .time_info;
+}
+.expire_time{
+        .time_info;
+}
+.l{
+        color:#ddd;
+}
+//scheme_detail
+.scheme_detail{
+//{{{
+}//}}}
+.product_item{
+//{{{
+        clear: both;
+        color: #666;
+        .title{
+                display: inline-block;
+                margin: 0 5px;
+        }
+}//}}}
+.price_detail{
+//{{{
+        margin-bottom: 10px;
+}//}}}
+.more{
+//{{{
+        @link_color: #0084b4;
+        .functions{
+                display: inline-block;
+                width: 100%;
+                .item{
+                        display: inline-block;
+                        float: left;
+                        color: @link_color;
+                        font-size: 14px;
+                        cursor: pointer;
+                        margin-right: 5px;
+                        &:hover{
+                                color:@link_color + #111;
+                        }
+                }
+                .undo_favor{
+                        @undo_favor_color: #FF9B00;
+                        color: @undo_favor_color;
+                        i{
+                                color: @undo_favor_color;
+                        }
+                        &:hover{
+                                color: @undo_favor_color;
+                        }
+                }
+        }
+        //私聊
+        .reply_cont{
+		//默认不显示
+		display: none;
+                .reply_input{
+                        padding: 0;
+                        margin: 0;
+                        width: 100%;
+                        margin-bottom: 5px;
+                }
+                //回复信息的容器
+                .reply_items{
+                        clear: both;
+                        .reply_item{
+                                min-height: 40px;
+                                border-bottom: 1px dotted #666;
+                                .user{
+                                        color: @link_color;
+                                }
+                                .content{
+
+                                }
+                                .opt{
+                                        display: none;
+                                        a{
+                                                display: inline-block;
+                                                margin-right: 5px;
+                                        }
+                                }
+                        }
+                }
+        }
+        //转发
+        .retweet_items{
+                .retweet_item{
+                        min-height: 64px;
+                        margin-bottom: 5px;
+                        .retweeter_nick{
+                                display: inline-block;
+                                color: @link_color;
+                        }
+                        .user_head{
+                                width: 32px;
+                                height: 32px;
+                                margin-left: -57px;
+                                border-radius: 5px;
+                                float: left;
+                        }
+                        .content_con{
+                                min-height: 36px;
+                                margin-bottom: 7px;
+                        }
+                        .time{
+                                float: left;
+                        }
+                        .opt{ 
+                                margin-left: 12px;
+                                display: none;
+                                float: left;
+                        }
+                }
+                .top_border{
+                        padding-top: 5px;
+                        border-top: 1px dashed #ddd;
+                }
+        }
+}//}}}
+
